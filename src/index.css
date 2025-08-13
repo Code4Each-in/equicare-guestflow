@@ -8,33 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Coastal Theme Colors */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Ocean Blue Primary */
+    --primary: 200 95% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 200 85% 65%;
+    --primary-dark: 200 100% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Sandy Secondary */
+    --secondary: 35 25% 85%;
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Coastal Muted */
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Teal Accent */
+    --accent: 180 85% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Emergency Red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Coastal Borders */
+    --border: 210 20% 88%;
+    --input: 210 25% 95%;
+    --ring: 200 95% 45%;
+
+    /* Coastal Gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(200 95% 45%), hsl(180 85% 55%));
+    --gradient-sand: linear-gradient(135deg, hsl(35 25% 85%), hsl(45 30% 90%));
+    --gradient-sunset: linear-gradient(135deg, hsl(25 85% 70%), hsl(35 90% 75%));
+
+    /* Elegant Shadows */
+    --shadow-coastal: 0 10px 25px -5px hsl(200 95% 45% / 0.1);
+    --shadow-elevated: 0 20px 40px -10px hsl(200 95% 45% / 0.15);
 
     --radius: 0.5rem;
 
@@ -56,33 +74,51 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark Coastal Theme */
+    --background: 210 50% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 45% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 45% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Ocean Blue Primary (adjusted for dark) */
+    --primary: 200 90% 55%;
+    --primary-foreground: 210 50% 8%;
+    --primary-light: 200 80% 70%;
+    --primary-dark: 200 100% 40%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    /* Dark Sandy Secondary */
+    --secondary: 210 35% 18%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Dark Coastal Muted */
+    --muted: 210 40% 15%;
+    --muted-foreground: 215 15% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Dark Teal Accent */
+    --accent: 180 75% 50%;
+    --accent-foreground: 210 50% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    /* Dark Emergency Red */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Dark Coastal Borders */
+    --border: 210 35% 20%;
+    --input: 210 40% 15%;
+    --ring: 200 90% 55%;
+
+    /* Dark Coastal Gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(200 90% 35%), hsl(180 75% 45%));
+    --gradient-sand: linear-gradient(135deg, hsl(210 35% 18%), hsl(215 30% 22%));
+    --gradient-sunset: linear-gradient(135deg, hsl(25 70% 50%), hsl(35 75% 55%));
+
+    /* Dark Elegant Shadows */
+    --shadow-coastal: 0 10px 25px -5px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
